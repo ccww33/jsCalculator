@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.operation-button {
+    background-color: rgb(96, 214, 214);
+    height: min-content;
+    width: min-content;
+    padding: 2vh;
+    font-size: 4vh;
+}
+
+.equals-button {
+    background-color: rgb(247, 200, 45);
+    height: min-content;
+    width: min-content;
+    padding: 2vh;
+    font-size: 4vh;
+}
+
+.num-input-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.num-button {
+    font-size: 4vh;
+    margin: 2vh;
+    color: blue;
+    user-select: none; /* Standard syntax */
+}
+
+.num-button:hover {
+    cursor: pointer;
+}
