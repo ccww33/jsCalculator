@@ -59,3 +59,7 @@ function buttonEquals() {
     let mathFunction = new Function(`return ${inputExpression}`);
     resultBoxContent.textContent = mathFunction();
 }
+
+function buttonClear() {
+    inputBoxContent.textContent = 0;
+}

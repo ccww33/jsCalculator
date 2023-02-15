@@ -15,26 +15,28 @@
 
 
 
-    <div style="margin: 2vh;">
+    <div class="operation-container">
       <button onclick="buttonPlus()" class="operation-button">+</button>
       <button onclick="buttonMinus()" class="operation-button">-</button>
       <button onclick="buttonMultiply()" class="operation-button">x</button>
       <button onclick="buttonDivide()" class="operation-button">/</button>
       
       <button onclick="buttonEquals()" class="equals-button">=</button>
+
+      <button onclick="buttonClear()" class="clear-button">clear</button>
       
     </div>
     
     
-    
-    <div style="margin: 2vh;">
-      <h2 id="input-box">0</h2>
-    </div>
+    <div class="input-result-container">
+      <div>
+        <h2 id="input-box" class="input-box">0</h2>
+      </div>
 
-    <div style="margin: 2vh;">
-      <h2 id="result-box">0</h2>
+      <div>
+        <h2 id="result-box" class="result-box">0</h2>
+      </div>
     </div>
-
 
 
   <script src="script1.js"></script>
