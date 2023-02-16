@@ -35,6 +35,7 @@ body{
     font-weight: 300;
     color: rgb(70, 70, 82);
     background-color: #d8d8d8;
+    border: 5px solid #cccccc;
     user-select: none; /* Standard syntax */
     height: max;
     border-radius: 0.2ch;
@@ -46,6 +47,9 @@ body{
 
 .num-button:hover {
     cursor: pointer;
+    background-color: #cccccc;
+    ;
+    ;
 }
 
 
@@ -58,7 +62,7 @@ body{
     margin-bottom: 1.5ch;
     background-color: #363636;
     padding: 1ch;
-    border-radius: 2ch;
+    border-radius: 1ch;
     width: fit-content;
     
     gap: 1ch;
@@ -71,7 +75,7 @@ body{
 
     background-color: rgb(233, 233, 233);
     color:rgb(51, 51, 51);
-    border-radius: 1ch;
+    border-radius: 0.5ch;
     width: 3ch;
     height: 4ch;
     border: none;
@@ -93,7 +97,7 @@ body{
 
     background-color: rgb(250, 150, 0);
     color:rgb(51, 51, 51);
-    border-radius: 1ch;
+    border-radius: 0.5ch;
     width: 3ch;
     height: 4ch;
     border: none;
@@ -134,26 +138,53 @@ body{
     flex-direction: column;
     width: fit-content;
     gap: 2ch;
-    border: 1px solid #b4b4b4;
+    border: 5px solid #b4b4b431;
     border-radius: 1ch;
     margin-left: 2ch;
     padding: 2ch;
+    padding-right: 10ch;
+    padding-bottom: 5ch;
 }
 
 .input-box {
     font-size: 4vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
+    font-weight: 400;
     color: rgb(124, 124, 124);
     user-select: none; /* Standard syntax */
-    height:inherit;
+    height: inherit;
     margin: 0;
 }
 
 .result-box {
     font-size: 4vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
     color: rgb(70, 70, 82);
     user-select: none; /* Standard syntax */
     height:inherit;
     margin: 0;
+}
+
+.copy-icon {
+    height: 1.8ch;
+    margin-top: 1ch;
+    position: absolute;
+}
+
+.copy-icon:hover {
+    cursor: copy;
+}
+
+.clipboard-alert-box {
+    position: absolute;
+    margin-top: 1ch;
+    background-color: rgb(70, 70, 82);
+    color: rgb(233, 233, 233);
+    border-radius: 0.4ch;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3ch;
+    padding: 0.2ch;
+    padding-left: 1ch;
+    padding-right: 1ch;
 }

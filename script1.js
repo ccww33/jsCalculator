@@ -63,3 +63,25 @@ function buttonEquals() {
 function buttonClear() {
     inputBoxContent.textContent = 0;
 }
+
+function copyResult() {
+    let copyText = resultBoxContent.textContent;
+    navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        let clipboardAlert = document.createElement("clipboard-alert");
+        clipboardAlert.textContent = "Copied to clipboard.";
+        clipboardAlert.className = "clipboard-alert-box"
+        
+        let copyIcon = document.getElementById("copy-icon");
+        
+        // replace copyIcon with clipboardAlert...
+        copyIcon.parentNode.replaceChild(clipboardAlert, copyIcon);
+        
+        // ... but after 2 seconds do the opposite.
+        setTimeout(function() {
+            clipboardAlert.parentNode.replaceChild(copyIcon, clipboardAlert);
+        }, 2000);
+        
+    });
+}
